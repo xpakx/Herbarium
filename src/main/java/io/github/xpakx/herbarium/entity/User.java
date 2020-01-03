@@ -15,11 +15,13 @@ import javax.persistence.CascadeType;
 import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
 import javax.persistence.Transient;
+import javax.persistence.Table;
 
 import java.util.List;
 
 @Entity
 @Data
+@Table(name = "users")
 public class User
 {
   @Id
